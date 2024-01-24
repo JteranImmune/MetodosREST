@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/agregar" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre"  id="nombre">
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido"  id="apellido">
+        <label for="edad">Edad</label>
+        <input type="number" name="edad"  id="edad">
+        <button type="button" onclick="agregarPersonas()">Enviar</button>
+    </form>
+
+
+    <table id="tablaPersonas" border="1" style="width: 250px;">
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Edad</td>
+        </tr>
+    </table>
+
+    <script src="peticion.js"></script>
+</body>
+</html>
